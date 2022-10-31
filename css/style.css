@@ -1,0 +1,353 @@
+/* 設定 */
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration : none;
+    color           : black;
+}
+ul {
+    list-style : none;
+}
+.wrapper {
+    max-width : 800px;
+    margin    : 0 auto;
+}
+.section-title {
+    max-width : 200px;
+}
+.section-title .en {
+    width       : 100%;
+    font-size   : 1.6rem;
+    font-weight : 400;
+}
+.section-title .border img {
+    width : 50%;
+}
+.nav-area {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    margin-bottom   : 70px;
+}
+.nav-area .btn {
+    background-image    : url(../img/button-arrow@2x.png);
+    background-position : 130px 50%;
+    background-size     : 8px 12px;
+    padding             : 0.7rem 3.5rem;
+    border              : 1px solid black;
+    font-size           : 0.8rem;
+}
+.nav-area .btn:hover {
+    color            : white;
+    background-color : black;
+    transition       : 0.5s;
+}
+
+/* ヘッダー */
+#header {
+    animation           : anime 20s ease-in-out 0s infinite normal;
+    position            : relative;
+    background-position : center top;
+    background-repeat   : no-repeat;
+    background-size     : cover;
+    max-width           : 100%;
+    height              : calc(100vh - 30px);
+}
+/* アニメーション */
+@keyframes anime {
+    0% {
+      background-image : url(../img/main_visual_111-0x0.jpg);
+    }
+    25% {
+      background-image : url(../img/main_visual_13-0x0.jpg);
+    }
+    50% {
+      background-image : url(../img/main_visual_2-0x0.jpg);
+    }
+    75% {
+        background-image : url(../img/main_visual_6-0x0.jpg);
+    }
+    100% {
+        background-image : url(../img/main_visual_7-0x0.jpg);
+    }
+  }
+#header .main-visual-arrow {
+    position        : absolute;
+    bottom          : 65px;
+    left            : 50%;
+    transform       : translateX(-50%);
+    background      : url(../img/mainVisual-arrow@2x.png) no-repeat;
+    background-size : 25px 15px;
+    width           : 25px;
+    height          : 15px;
+}
+#header .main-visual-footer {
+    position            : absolute;
+    bottom              : 0;
+    left                : 0;
+    background-image    : url(../img/mainVisual-overlay@2x.png);
+    background-position : center top;
+    background-repeat   : no-repeat;
+    background-size     : cover;
+    width               : 100%;
+    height              : 5%;
+}
+#header .wrapper {
+    max-width        : 1200px;
+    display          : flex;
+    justify-content  : space-between;
+    align-items      : center;
+    height           : 120px;
+    margin           : 0 auto;
+}
+#header .wrapper .site-title {
+    max-width : 250px;
+}
+#header .wrapper .site-title img {
+    width : 100%;
+}
+#header .wrapper .site-title img:hover {
+    opacity    : 0.7;
+    transition : 0.5s;
+}
+#header .wrapper .list {
+    display : flex;
+    gap     : 30px;
+}
+#header .wrapper .list li a {
+    display        : inline-block;
+    padding-bottom : 2px;
+    border-bottom  : 2px solid transparent;
+    font-size      : 0.8rem;
+    color          : white;
+}
+#header .wrapper .list li a:hover{
+    border-bottom  : 2px solid white;
+}
+
+
+/* メイン */
+main {
+    position : relative;
+}
+main .back-top-btn {
+    position          : absolute;
+    bottom            : 0;
+    left              : calc(50% - 22.5px);
+    background-image  : url(../img/backTop@2x.png);
+    background-repeat : no-repeat;
+    background-size   : 45px 45px;
+    width             : 45px;
+    height            : 45px;
+    margin-bottom     : -22.5px;
+    cursor            : pointer;
+}
+main .back-top-btn:hover {
+    transition : 0.5s;
+    bottom     : 5px;
+}
+#calling {
+    padding          : 100px 0;
+    background-color : rgb(239, 239, 239);
+}
+#calling .contents {
+    width  : 400px;
+    margin : 0 auto;
+}
+#calling .contents .title {
+    text-align    : center;
+    margin-bottom : 50px;
+    font-size     : 2.8rem;
+    font-weight   : 400;
+}
+#calling .contents .text-area .description {
+    margin-bottom : 20px;
+    font-size     : 1.2rem;
+    line-height   : 1.8;
+}
+#calling .contents .text-area .logo-area {
+    margin-bottom : 20px;
+}
+#calling .contents .text-area .logo-area span {
+    display    : block;
+    text-align : center;
+}
+#calling .contents .text-area .logo-area .ja {
+    letter-spacing : 1rem;
+    font-size      : 0.8rem;
+    font-weight    : 400;
+}
+#calling .contents .text-area .logo-area .en {
+    letter-spacing : 0.3rem;
+    font-size      : 1.8rem;
+}
+#product {
+    padding          : 100px 0;
+    background-color : white;
+}
+#product .card-area .card-list {
+    max-width : 700px;
+    margin    : 0 auto;
+}
+#product .card-area .card-list {
+    display    : flex;
+    flex-wrap  : wrap;
+    column-gap : 3.33%;
+}
+#product .card-area .card-list li {
+    width         : 30.33%;
+    margin        : 35px 0;
+}
+#product .card-area .card-list li:hover{
+    opacity : 0.7;
+    transition : 0.5s;
+}
+#product .card-area .card-list li .card-img {
+    width            : 100%;
+    height           : 300px;
+    border-radius    : 3% 13% 13% 3%;
+}
+#product .card-area .card-list li .card-img img{
+    width  : 100%;
+    height : 100%;
+}
+#product .card-area .card-list li .card-title {
+    font-size   : 1.2rem;
+    font-weight : 700;
+}
+#news {
+    padding          : 100px 0;
+    background-color : rgb(239, 239, 239);
+}
+#news .news-area .news-list li {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : flex-start;
+    margin-bottom   : 50px;
+}
+#news .news-area .news-list li:hover {
+    opacity : 0.7;
+    transition : 0.5s;
+}
+#news .news-area .news-list li .img-area {
+    width            : 40%;
+    height           : 170px;
+}
+#news .news-area .news-list li .img-area img {
+    width            : 100%;
+    height           : 100%;
+}
+#news .news-area .news-list li .text-area {
+    width            : 55%;
+}
+#news .news-area .news-list li .text-area .title {
+    font-size      : 1.1rem;
+    letter-spacing : 2px;
+}
+#news .news-area .news-list li .text-area time {
+    font-size     : 0.7rem;
+    color         : rgb(113, 113, 113);
+}
+#news .news-area .news-list li .text-area .description {
+    margin-top    : 1rem;
+    font-size     : 0.9rem;
+    color         : rgb(113, 113, 113);
+}
+
+
+/* フッター */
+#footer .sns-area .wrapper{
+    width           : 700px;
+    margin          : 30px auto;
+}
+#footer .sns-area .wrapper .list {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+}
+#footer .sns-area .wrapper .list a {
+    display        : block;
+    text-align     : center;
+    width          : 200px;
+    padding        : 15px 0;
+    letter-spacing : 1px;
+    font-size      : 0.8rem;
+}
+#footer .sns-area .wrapper .list a:hover {
+    transition : 0.5s;
+}
+#footer .sns-area .wrapper .list .facebook-btn {
+    border    : 1px solid rgb(52, 81, 176);
+    color     : rgb(52, 81, 176);
+}
+#footer .sns-area .wrapper .list .facebook-btn:hover {
+    background-color : rgb(52, 81, 176);
+    color            : white;
+}
+#footer .sns-area .wrapper .list .twitter-btn {
+    border    : 1px solid rgb(69, 209, 255);
+    color     : rgb(69, 209, 255);
+}
+#footer .sns-area .wrapper .list .twitter-btn:hover {
+    background-color : rgb(69, 209, 255);
+    color            : white;
+}
+#footer .sns-area .wrapper .list .bookmark-btn {
+    border    : 1px solid rgb(65, 138, 232);
+    color     : rgb(65, 138, 232);
+}
+#footer .sns-area .wrapper .list .bookmark-btn:hover {
+    background-color : rgb(65, 138, 232);
+    color            : white;
+}
+#footer .nav-area {
+    background-color : rgb(179, 179, 179);
+    margin           : 0;
+}
+#footer .nav-area .wrapper {
+    width            : 500px;
+    margin           : 30px auto;
+}
+#footer .nav-area .wrapper .list {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+}
+#footer .nav-area .wrapper .list a {
+    font-size : 0.8rem;
+    color : white;
+}
+#footer .nav-area .wrapper .list a:hover {
+    opacity    : 0.7;
+    transition : 0.5s;
+}
+#footer .text-area {
+    padding          : 50px 0;
+    background-color : rgb(119, 119, 119);
+}
+#footer .text-area .wrapper {
+    width  : 1000px;
+    margin : 0 auto;
+}
+#footer .text-area .wrapper .list {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+}
+#footer .text-area .wrapper .list .logo {
+    width  : 80px;
+    height : 80px;
+}
+#footer .text-area .wrapper .list .logo img {
+    width  : 100%;
+    height : 100%;
+}
+#footer .text-area .wrapper .list .logo img:hover {
+    opacity    : 0.7;
+    transition : 0.5s;
+}
+#footer .text-area .wrapper .list .copyright {
+    font-size : 0.7rem;
+    color     : white;
+}
