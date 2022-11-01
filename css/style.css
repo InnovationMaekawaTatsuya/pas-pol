@@ -1,6 +1,6 @@
 /* 設定 */
 html {
-    scroll-behavior: smooth;
+    scroll-behavior : smooth;
 }
 a {
     text-decoration : none;
@@ -28,27 +28,31 @@ ul {
     display         : flex;
     justify-content : space-between;
     align-items     : center;
-    margin-bottom   : 70px;
+    margin-bottom   : 4.375rem;
 }
 .nav-area .btn {
+    position            : relative;
+    background-image    : url(../img/button-arrow@2x.png);
+    background-position : 130px 50%;
+    background-size     : 8px 12px;
     padding             : 0.7rem 3.5rem;
     border              : 1px solid black;
     font-size           : 0.8rem;
 }
-.nav-area .arrow {
-    background-image    : url(../img/button-arrow@2x.png);
-    background-position : 130px 50%;
-    background-size     : 8px 12px;
-}
-.nav-area .btn:hover,
-.nav-area .arrow:hover {
+.nav-area .btn:hover {
+    position         : relative;
+    background-image : none;
+    background-color : black;
     color            : white;
-    background-color : black;
-    transition       : 0.5s;
 }
-.nav-area .arrow:hover {
-    filter: invert(100%);
-    background-color : black;
+.nav-area .btn:hover::after {
+    position    : absolute;
+    top         : 35%;
+    left        : 127px;
+    content     : "\f054";
+    color       : white;
+    font-family : fontAwesome;
+    font-size   : 0.8rem;
 }
 
 /* ヘッダー */
@@ -101,7 +105,7 @@ ul {
     height          : 120px;
 }
 #header .header-wrapper .site-title {
-    max-width   : 250px;
+    max-width : 250px;
 }
 #header .header-wrapper .site-title img {
     float       : left;
@@ -120,12 +124,12 @@ ul {
 }
 #header .header-wrapper .list li a {
     display        : inline-block;
-    padding-bottom : 2px;
+    padding-bottom : 0.125rem;
     border-bottom  : 2px solid transparent;
     font-size      : 0.8rem;
     color          : white;
 }
-#header .header-wrapper .list li a:hover{
+#header .header-wrapper .list li a:hover {
     border-bottom  : 2px solid white;
 }
 
@@ -143,7 +147,7 @@ main .back-top-btn {
     background-size   : 45px 45px;
     width             : 45px;
     height            : 45px;
-    margin-bottom     : -22.5px;
+    margin-bottom     : -1.40625rem;
     cursor            : pointer;
 }
 main .back-top-btn:hover {
@@ -151,42 +155,33 @@ main .back-top-btn:hover {
     bottom     : 5px;
 }
 #calling {
-    padding          : 100px 0;
+    padding          : 6.25rem 0;
     background-color : rgb(239, 239, 239);
 }
 #calling .contents {
-    width  : 400px;
+    width  : 380px;
     margin : 0 auto;
 }
 #calling .contents .title {
     text-align    : center;
-    margin-bottom : 50px;
+    margin-bottom : 3.125rem;
     font-size     : 2.8rem;
     font-weight   : 400;
 }
 #calling .contents .text-area .description {
-    margin-bottom : 20px;
+    margin-bottom : 1.25rem;
     font-size     : 1.2rem;
     line-height   : 1.8;
 }
 #calling .contents .text-area .logo-area {
-    margin-bottom : 20px;
+    max-width : 200px;
+    margin    : 0 auto 1.25rem auto;
 }
-#calling .contents .text-area .logo-area span {
-    display    : block;
-    text-align : center;
-}
-#calling .contents .text-area .logo-area .ja {
-    letter-spacing : 1rem;
-    font-size      : 0.8rem;
-    font-weight    : 400;
-}
-#calling .contents .text-area .logo-area .en {
-    letter-spacing : 0.3rem;
-    font-size      : 1.8rem;
+#calling .contents .text-area .logo-area img {
+    width : 100%;
 }
 #product {
-    padding          : 100px 0;
+    padding          : 6.25rem 0;
     background-color : white;
 }
 #product .card-area .card-list {
@@ -199,19 +194,19 @@ main .back-top-btn:hover {
     column-gap : 3.33%;
 }
 #product .card-area .card-list li {
-    width         : 30.33%;
-    margin        : 35px 0;
+    width  : 30.33%;
+    margin : 2.1875rem 0;
 }
-#product .card-area .card-list li:hover{
-    opacity : 0.7;
+#product .card-area .card-list li:hover {
+    opacity    : 0.7;
     transition : 0.5s;
 }
 #product .card-area .card-list li .card-img {
-    width            : 100%;
-    height           : 300px;
-    border-radius    : 3% 13% 13% 3%;
+    width         : 100%;
+    height        : 300px;
+    border-radius : 3% 13% 13% 3%;
 }
-#product .card-area .card-list li .card-img img{
+#product .card-area .card-list li .card-img img {
     width  : 100%;
     height : 100%;
 }
@@ -220,49 +215,49 @@ main .back-top-btn:hover {
     font-weight : 700;
 }
 #news {
-    padding          : 100px 0;
+    padding          : 6.25rem 0;
     background-color : rgb(239, 239, 239);
 }
 #news .news-area .news-list li {
     display         : flex;
     justify-content : space-between;
     align-items     : flex-start;
-    margin-bottom   : 50px;
+    margin-bottom   : 3.125rem;
 }
 #news .news-area .news-list li:hover {
-    opacity : 0.7;
+    opacity    : 0.7;
     transition : 0.5s;
 }
 #news .news-area .news-list li .img-area {
-    width            : 40%;
-    height           : 170px;
+    width  : 40%;
+    height : 170px;
 }
 #news .news-area .news-list li .img-area img {
-    width            : 100%;
-    height           : 100%;
+    width  : 100%;
+    height : 100%;
 }
 #news .news-area .news-list li .text-area {
-    width            : 55%;
+    width : 55%;
 }
 #news .news-area .news-list li .text-area .title {
     font-size      : 1.1rem;
     letter-spacing : 2px;
 }
 #news .news-area .news-list li .text-area time {
-    font-size     : 0.7rem;
-    color         : rgb(113, 113, 113);
+    font-size : 0.7rem;
+    color     : rgb(113, 113, 113);
 }
 #news .news-area .news-list li .text-area .description {
-    margin-top    : 1rem;
-    font-size     : 0.9rem;
-    color         : rgb(113, 113, 113);
+    margin-top : 1rem;
+    font-size  : 0.9rem;
+    color      : rgb(113, 113, 113);
 }
 
 
 /* フッター */
-#footer .sns-area .wrapper{
-    width           : 700px;
-    margin          : 30px auto;
+#footer .sns-area .wrapper {
+    width  : 700px;
+    margin : 1.875rem auto;
 }
 #footer .sns-area .wrapper .list {
     display         : flex;
@@ -273,7 +268,7 @@ main .back-top-btn:hover {
     display        : block;
     text-align     : center;
     width          : 200px;
-    padding        : 15px 0;
+    padding        : 0.9375rem 0;
     letter-spacing : 1px;
     font-size      : 0.8rem;
 }
@@ -281,24 +276,24 @@ main .back-top-btn:hover {
     transition : 0.5s;
 }
 #footer .sns-area .wrapper .list .facebook-btn {
-    border    : 1px solid rgb(52, 81, 176);
-    color     : rgb(52, 81, 176);
+    border : 1px solid rgb(52, 81, 176);
+    color  : rgb(52, 81, 176);
 }
 #footer .sns-area .wrapper .list .facebook-btn:hover {
     background-color : rgb(52, 81, 176);
     color            : white;
 }
 #footer .sns-area .wrapper .list .twitter-btn {
-    border    : 1px solid rgb(69, 209, 255);
-    color     : rgb(69, 209, 255);
+    border : 1px solid rgb(69, 209, 255);
+    color  : rgb(69, 209, 255);
 }
 #footer .sns-area .wrapper .list .twitter-btn:hover {
     background-color : rgb(69, 209, 255);
     color            : white;
 }
 #footer .sns-area .wrapper .list .bookmark-btn {
-    border    : 1px solid rgb(65, 138, 232);
-    color     : rgb(65, 138, 232);
+    border : 1px solid rgb(65, 138, 232);
+    color  : rgb(65, 138, 232);
 }
 #footer .sns-area .wrapper .list .bookmark-btn:hover {
     background-color : rgb(65, 138, 232);
@@ -309,8 +304,8 @@ main .back-top-btn:hover {
     margin           : 0;
 }
 #footer .nav-area .wrapper {
-    width            : 500px;
-    margin           : 30px auto;
+    width  : 500px;
+    margin : 1.875rem auto;
 }
 #footer .nav-area .wrapper .list {
     display         : flex;
@@ -319,14 +314,14 @@ main .back-top-btn:hover {
 }
 #footer .nav-area .wrapper .list a {
     font-size : 0.8rem;
-    color : white;
+    color     : white;
 }
 #footer .nav-area .wrapper .list a:hover {
     opacity    : 0.7;
     transition : 0.5s;
 }
 #footer .text-area {
-    padding          : 50px 0;
+    padding          : 3.125rem 0;
     background-color : rgb(119, 119, 119);
 }
 #footer .text-area .wrapper {
