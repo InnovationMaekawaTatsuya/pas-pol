@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PAS-POL</title>
     <link href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
@@ -22,9 +23,10 @@
             <img src="../img/main_visual_6-0x0.jpg" alt="">
             <img src="../img/main_visual_7-0x0.jpg" alt="">
         </div>
+        <div class="sp-header-logo"></div>
         <div class="main-visual-arrow"></div>
         <div class="main-visual-footer"></div>
-        <div class="header-wrapper">
+        <div class="header-wrapper pc-header">
             <h1 class="site-title"><a href="#"><img src="../img/siteLogo-pc@2x.png" alt="PAS-POL"></a></h1>
             <nav>
                 <ul class="list">
@@ -45,6 +47,43 @@
                     </li>
                 </ul>
             </nav>
+        </div>
+        <div class="sp-header">
+            <input type="checkbox" id="menu-btn-check" class="none">
+                <label for="menu-btn-check" class="menu-btn flex">
+                    <p class="title">MENU</p>
+                    <div class="img-area">
+                        <img src="../img/navigation-toggle@2x.png" alt="">
+                    </div>
+                </label>
+            <div class="hamburger-menu">
+                <ul class="list">
+                    <li>
+                        <a href="#">TOP</a>
+                    </li>
+                    <li>
+                        <a href="#">PRODUCT</a>
+                    </li>
+                    <li>
+                        <a href="#">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#">NEWS</a>
+                    </li>
+                    <li>
+                        <a href="#">CONTACT</a>
+                    </li>
+                </ul>
+                <div class="checked-sp-header">
+                    <input type="checkbox" id="menu-btn-check">
+                        <label for="menu-btn-check" class="menu-btn flex">
+                            <p class="title">MENU</p>
+                            <div class="img-area">
+                                <img src="../img/navigation-toggle@2x.png" alt="">
+                            </div>
+                        </label>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -130,6 +169,7 @@
                             </p>
                         </li>
                     </ul>
+                    <a href="#" class="mini-btn">MORE</a>
                 </div>
             </div>
         </section>
@@ -241,6 +281,7 @@
                             </div>
                         </li>
                     </ul>
+                    <a href="#" class="mini-btn">MORE</a>
                 </div>
             </div>
         </section>
@@ -248,7 +289,7 @@
     </main>
     <footer id="footer">
         <div class="sns-area">
-            <div class="wrapper">
+            <div class="sns-wrapper">
                 <ul class="list">
                     <li>
                         <a href="#" class="facebook-btn">Share on Facebook</a>
@@ -258,6 +299,9 @@
                     </li>
                     <li>
                         <a href="#" class="bookmark-btn">Share on Bookmark</a>
+                    </li>
+                    <li class="none">
+                        <a href="#" class="line-btn">Send to LINE</a>
                     </li>
                 </ul>
             </div>
