@@ -125,7 +125,7 @@ ul {
     background-image    : url(../img/mainVisual-overlay@2x.png);
     background-position : center top;
     background-repeat   : no-repeat;
-    background-size     : cover;
+    background-size     : 100% 100%;
     width               : 100%;
     height              : 5%;
 }
@@ -406,6 +406,9 @@ main .back-top-btn:hover {
 --------------------------------------------*/
 @media screen and (max-width :900px) {
     /* ヘッダー */
+    #header .main-visual-footer {
+        background-size : 100% 100%;
+    }
     #header .pc-header {
         display : none;
     }
@@ -483,7 +486,7 @@ main .back-top-btn:hover {
         background-color : rgba(0,0,0,0.7);
     }
     #header .hamburger-menu .list li {
-        padding    : 0.8rem 0 0.8rem 5%;
+        padding    : 1.2rem 0 1.2rem 5%;
         border-top : 1px solid white;
     }
     #header .hamburger-menu .list li a {
@@ -491,12 +494,12 @@ main .back-top-btn:hover {
         font-size : 0.8rem;
     }
     #header .menu-btn {
-        display          : flex;
-        justify-content  : center;
-        align-items      : center;
-        z-index          : 90;
-        width            : 100%;
-        height           : 100%;
+        display         : flex;
+        justify-content : center;
+        align-items     : center;
+        z-index         : 90;
+        width           : 100%;
+        height          : 100%;
     }
     #menu-btn-check {
         display : none;
@@ -510,14 +513,25 @@ main .back-top-btn:hover {
         width      : 100%;
         height     : 100%;
     }
+    /* #header input[type=checkbox]:checked nav:has(> input) {
+        background-color : transparent;
+        opacity: 0;
+        background-color:rgba(0,0,0,0);
+    } */
+    /* #header input[type=checkbox]:checked + .sp-header {
+        background-color: transparent !important;
+        background-color:rgba(0,0,0,0) !important;
+        opacity: 0 !important;
+    } */
     #header input[type=checkbox]:checked ~ .hamburger-menu {
         position : fixed;
         top      : 0;
         left     : 0;
     }
-    #header input[type=checkbox]:checked ~ .sp-header .none {
+    #header input[type=checkbox]:checked + .none {
         display : none;
     }
+}
 
 @media screen and (max-width :780px) {
     /* 設定 */
