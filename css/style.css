@@ -20,7 +20,8 @@ ul {
     margin    : 0 auto;
 }
 #header .sp-header {
-    display : none;
+    display        : none;
+    border-bottom  : 1px solid lightgray;
 }
 #header .hamburger-menu {
     display : none;
@@ -691,6 +692,15 @@ main #main-bottom-contents .back-top-btn:hover {
     /* 設定 */
     .wrapper {
         max-width : 90%;
+    }
+    #header .none-header {
+        display          : block;
+        position         : absolute;
+        top              : 0;
+        left             : 0;
+        width            : 100%;
+        height           : 55px;
+        background-color : white;
     }
     .section-title .en {
         letter-spacing : 3px;
