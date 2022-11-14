@@ -50,14 +50,17 @@
             </nav>
         </div>
         <div id="sp-header" class="sp-header">
-            <input type="checkbox" id="menu-btn-check" class="sp-header-menu">
-                <label for="menu-btn-check" class="menu-btn flex none">
-                    <p class="title none">MENU</p>
-                    <div class="img-area none">
+            <nav id="before-header" class="sp-header-menu">
+                <ul class="header-list">
+                    <li class="title">
+                        MENU
+                    </li>
+                    <li class="img-area">
                         <img src="../img/navigation-toggle@2x.png" alt="">
-                    </div>
-                </label>
-            <nav class="hamburger-menu">
+                    </li>
+                </ul>
+            </nav>
+            <nav id="hamburger-place" class="hamburger-none">
                 <ul class="list">
                     <li>
                         <a href="#">TOP</a>
@@ -76,13 +79,16 @@
                     </li>
                 </ul>
                 <div class="checked-sp-header">
-                    <input type="checkbox" id="menu-btn-check" class="checked-sp-header-btn">
-                        <label for="menu-btn-check" class="menu-btn flex">
-                            <p class="title">MENU</p>
-                            <div class="img-area">
+                    <nav class="checked-sp-header-menu">
+                        <ul class="header-list">
+                            <li class="title">
+                                MENU
+                            </li>
+                            <li class="img-area">
                                 <img src="../img/navigation-toggle@2x.png" alt="">
-                            </div>
-                        </label>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </nav>
         </div>
@@ -126,15 +132,15 @@
                                 <img src="../img/wh_thumb2.png" alt="">
                             </div>
                             <p class="card-title">
-                                世界一周 ３６５日 世界遺産絶景の旅
+                                世界一周 365日 世界遺産絶景の旅
                             </p>
                         </li>
                         <li>
                             <div class="card-img">
-                                <img src="../img/kyoto365_thumnail-1.png" alt="">
+                                <img src="../img/kyoto365_thumbnail-1.png" alt="">
                             </div>
                             <p class="card-title">
-                                ３６５日 京都 絶景の旅
+                                365日 京都 絶景の旅
                             </p>
                         </li>
                         <li>
@@ -142,7 +148,7 @@
                                 <img src="../img/banner_thumb1.png" alt="">
                             </div>
                             <p class="card-title">
-                                ３６５日 北海道 絶景日めくりカレンダー
+                                365日 北海道 絶景日めくりカレンダー
                             </p>
                         </li>
                         <li>
@@ -150,7 +156,7 @@
                                 <img src="../img/thumb_gokkaido.png" alt="">
                             </div>
                             <p class="card-title">
-                                ３６５日 北海道 絶景の旅
+                                365日 北海道 絶景の旅
                             </p>
                         </li>
                         <li>
@@ -166,7 +172,7 @@
                                 <img src="../img/banner_サムネイル21.png" alt="">
                             </div>
                             <p class="card-title">
-                                この世界で死ぬまでにしたいこと２０００
+                                この世界で死ぬまでにしたいこと2000
                             </p>
                         </li>
                     </ul>
@@ -286,10 +292,31 @@
                 </div>
             </div>
         </section>
-        <a href="#header"><div class="back-top-btn"></div></a>
+        <div id="main-bottom-contents">
+            <a href="#header"><div class="back-top-btn"></div></a>
+            <div class="sns-area">
+                <div class="sns-wrapper">
+                    <ul class="list">
+                        <li>
+                            <a href="#" class="facebook-btn">Share on Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#" class="twitter-btn">Share on Twitter</a>
+                        </li>
+                        <li>
+                            <a href="#" class="bookmark-btn">Share on Bookmark</a>
+                        </li>
+                        <li class="none">
+                            <a href="#" class="line-btn">Send to LINE</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- <a href="#header"><div class="back-top-btn"></div></a> -->
     </main>
     <footer id="footer">
-        <div class="sns-area">
+        <!-- <div class="sns-area">
             <div class="sns-wrapper">
                 <ul class="list">
                     <li>
@@ -306,7 +333,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div> -->
         <div class="nav-area">
             <div class="wrapper">
                 <ul class="list">

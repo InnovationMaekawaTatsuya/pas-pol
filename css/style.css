@@ -12,6 +12,9 @@ a {
 ul {
     list-style : none;
 }
+.none {
+    display : none;
+}
 .wrapper {
     max-width : 800px;
     margin    : 0 auto;
@@ -174,21 +177,21 @@ ul {
 main {
     position : relative;
 }
-main .back-top-btn {
+main #main-bottom-contents .back-top-btn {
     position          : absolute;
-    bottom            : 0;
-    left              : calc(50% - 22.5px);
+    bottom            : 55px;
+    left              : 50%;
+    transform         : translateX(-50%);
     background-image  : url(../img/backTop@2x.png);
     background-repeat : no-repeat;
     background-size   : 45px 45px;
     width             : 45px;
     height            : 45px;
-    margin-bottom     : -1.40625rem;
     cursor            : pointer;
 }
-main .back-top-btn:hover {
+main #main-bottom-contents .back-top-btn:hover {
     transition : 0.5s;
-    bottom     : 5px;
+    bottom     : 60px;
 }
 #calling {
     padding          : 6.25rem 0;
@@ -235,6 +238,7 @@ main .back-top-btn:hover {
 #product .card-area .card-list li {
     width  : 30.33%;
     margin : 2.1875rem 0;
+    cursor : pointer;
 }
 #product .card-area .card-list li:hover {
     opacity    : 0.7;
@@ -250,6 +254,7 @@ main .back-top-btn:hover {
     height : 100%;
 }
 #product .card-area .card-list li .card-title {
+    padding     : 0 1.25rem;
     font-size   : 1.2rem;
     font-weight : 700;
 }
@@ -262,6 +267,7 @@ main .back-top-btn:hover {
     justify-content : space-between;
     align-items     : flex-start;
     margin-bottom   : 3.125rem;
+    cursor          : pointer;
 }
 #news .news-area .news-list li:hover {
     opacity    : 0.7;
@@ -290,21 +296,18 @@ main .back-top-btn:hover {
     margin-top : 1rem;
     font-size  : 0.9rem;
     color      : rgb(113, 113, 113);
-}
-
-
-/* フッター */
-#footer .sns-area .sns-wrapper {
+} 
+#main-bottom-contents .sns-area .sns-wrapper {
     width  : 100%;
     margin : 1.875rem 0 1.875rem 0;
 }
-#footer .sns-area .sns-wrapper .list {
+#main-bottom-contents .sns-area .sns-wrapper .list {
     display         : flex;
     justify-content : center;
     align-items     : center;
     gap             : 30px;
 }
-#footer .sns-area .sns-wrapper .list a {
+#main-bottom-contents .sns-area .sns-wrapper .list a {
     display        : block;
     text-align     : center;
     width          : 200px;
@@ -312,42 +315,45 @@ main .back-top-btn:hover {
     letter-spacing : 1px;
     font-size      : 0.8rem;
 }
-#footer .sns-area .sns-wrapper .list a:hover {
+#main-bottom-contents .sns-area .sns-wrapper .list a:hover {
     transition : 0.5s;
 }
-#footer .sns-area .sns-wrapper .list .facebook-btn {
+#main-bottom-contents .sns-area .sns-wrapper .list .facebook-btn {
     border : 1px solid rgb(52, 81, 176);
     color  : rgb(52, 81, 176);
 }
-#footer .sns-area .sns-wrapper .list .facebook-btn:hover {
+#main-bottom-contents .sns-area .sns-wrapper .list .facebook-btn:hover {
     background-color : rgb(52, 81, 176);
     color            : white;
 }
-#footer .sns-area .sns-wrapper .list .twitter-btn {
+#main-bottom-contents .sns-area .sns-wrapper .list .twitter-btn {
     border : 1px solid rgb(69, 209, 255);
     color  : rgb(69, 209, 255);
 }
-#footer .sns-area .sns-wrapper .list .twitter-btn:hover {
+#main-bottom-contents .sns-area .sns-wrapper .list .twitter-btn:hover {
     background-color : rgb(69, 209, 255);
     color            : white;
 }
-#footer .sns-area .sns-wrapper .list .bookmark-btn {
+#main-bottom-contents .sns-area .sns-wrapper .list .bookmark-btn {
     border : 1px solid rgb(65, 138, 232);
     color  : rgb(65, 138, 232);
 }
-#footer .sns-area .sns-wrapper .list .bookmark-btn:hover {
+#main-bottom-contents .sns-area .sns-wrapper .list .bookmark-btn:hover {
     background-color : rgb(65, 138, 232);
     color            : white;
 }
-#footer .sns-area .sns-wrapper .list .line-btn {
+#main-bottom-contents .sns-area .sns-wrapper .list .line-btn {
     display : none;
     border  : 1px solid rgb(65, 232, 90);
     color   : rgb(91, 216, 110);
 }
-#footer .sns-area .sns-wrapper .list .line-btn:hover {
+#main-bottom-contents .sns-area .sns-wrapper .list .line-btn:hover {
     background-color : rgb(91, 216, 110);
     color            : white;
 }
+
+
+/* フッター */
 #footer .nav-area {
     background-color : rgb(152, 152, 152);
     margin           : 0;
@@ -462,10 +468,8 @@ main .back-top-btn:hover {
         color            : rgb(129, 129, 129);
         font-size        : 0.8rem;
     }
-    #header .checked-sp-header .flex {
-        display         : flex;
-        justify-content : space-between;
-        align-items     : center;
+    #header .sp-header .sp-header-menu {
+        width : 100%;
     }
     #header .checked-sp-header .img-area {
         width : 15px;        
@@ -477,7 +481,7 @@ main .back-top-btn:hover {
     #header .hamburger-menu {
         display  : block;
         position : absolute;
-        top      : 50px;
+        top      : 0;
         left     : 0;
         width    : 100%;
         height   : 100%;
@@ -488,6 +492,7 @@ main .back-top-btn:hover {
     #header .hamburger-menu .list li {
         padding    : 1.2rem 0 1.2rem 5%;
         border-top : 1px solid white;
+        cursor     : pointer;
     }
     #header .hamburger-menu .list li a {
         color     : white;
@@ -504,22 +509,24 @@ main .back-top-btn:hover {
     #menu-btn-check {
         display : none;
     }
+    #header .hamburger-none {
+        position : fixed;
+        top      : -100%;
+    }
     #header .hamburger-menu {
-        position   : fixed;
-        top        : -100%;
-        left       : 0;
+        display    : block ;
         z-index    : 80;
         transition : all 0.5s;
         width      : 100%;
         height     : 100%;
     }
-    #header input[type=checkbox]:checked ~ .hamburger-menu {
-        position : fixed;
-        top      : 0;
-        left     : 0;
+    #header .sp-header .checked-sp-header-menu {
+        width : 100%;
     }
-    #header input[type=checkbox]:checked + .none {
-        display : none;
+    #header .sp-header .header-list {
+        display         : flex;
+        justify-content : space-between;
+        align-items     : center;
     }
 }
 
@@ -557,16 +564,16 @@ main .back-top-btn:hover {
         line-height : 1.8;
         font-size   : 0.78rem;
     }
-
-    /* フッター */
-    #footer .sns-area .sns-wrapper .list {
+    #main-bottom-contents .sns-area .sns-wrapper .list {
         gap : 30px;
     }
-    #footer .sns-area .sns-wrapper .list a {
+    #main-bottom-contents .sns-area .sns-wrapper .list a {
         width     : 160px;
         padding   : 0.8rem 0;
         font-size : 0.7rem;
     }
+
+    /* フッター */
     #footer .nav-area .wrapper {
         width : 100%;
     }
@@ -606,12 +613,10 @@ main .back-top-btn:hover {
     #news .news-area .news-list li .img-area {
         height : 125px;
     }
-
-    /* フッター */
-    #footer .sns-area .sns-wrapper .list {
+    #main-bottom-contents .sns-area .sns-wrapper .list {
         gap : 10px;
     }
-    #footer .sns-area .sns-wrapper .list a {
+    #main-bottom-contents .sns-area .sns-wrapper .list a {
         width : 150px;
     }
 }
@@ -621,25 +626,29 @@ main .back-top-btn:hover {
     .wrapper {
         max-width : 90%;
     }
+    main #main-bottom-contents .back-top-btn {
+        bottom : 120px;
+    }
+    main #main-bottom-contents .back-top-btn:hover {
+        bottom : 125px;
+    }
 
     /* メイン */
     #product .card-area .card-list li .card-img {
         width  : 45%;
         height : auto;
     }
-
-    /* フッター */
-    #footer .sns-area .sns-wrapper .list .line-btn {
+    #main-bottom-contents .sns-area .sns-wrapper .list .line-btn {
         display : block;
     }
-    #footer .sns-area .sns-wrapper .list {
+    #main-bottom-contents .sns-area .sns-wrapper .list {
         flex-wrap : wrap;
         gap       : 10px;
     }
-    #footer .sns-area .sns-wrapper .list li {
+    #main-bottom-contents .sns-area .sns-wrapper .list li {
         width : 47%;
     }
-    #footer .sns-area .sns-wrapper .list a {
+    #main-bottom-contents .sns-area .sns-wrapper .list a {
         display        : block;
         text-align     : center;
         width          : 100%;
@@ -647,6 +656,8 @@ main .back-top-btn:hover {
         letter-spacing : 1px;
         font-size      : 0.8rem;
     }
+
+    /* フッター */
     #footer .nav-area .wrapper {
         max-width : 100%;
         margin    : 0;
