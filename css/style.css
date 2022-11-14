@@ -1,0 +1,770 @@
+/*--------------------------------------------
+    PC
+--------------------------------------------*/
+/* 設定 */
+html {
+    scroll-behavior : smooth;
+}
+a {
+    text-decoration : none;
+    color           : black;
+}
+ul {
+    list-style : none;
+}
+.none {
+    display : none;
+}
+.wrapper {
+    max-width : 800px;
+    margin    : 0 auto;
+}
+#header .sp-header {
+    display        : none;
+}
+#header .hamburger-menu {
+    display : none;
+}
+.section-title {
+    max-width : 200px;
+}
+.section-title .en {
+    width       : 100%;
+    font-size   : 1.6rem;
+    font-weight : 400;
+}
+.section-title .border img {
+    width : 50%;
+}
+.nav-area {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    margin-bottom   : 4.375rem;
+}
+.nav-area .btn {
+    position            : relative;
+    background-image    : url(../img/button-arrow@2x.png);
+    background-position : 130px 50%;
+    background-size     : 8px 12px;
+    padding             : 0.7rem 3.5rem;
+    border              : 1px solid black;
+    font-size           : 0.8rem;
+}
+.nav-area .btn:hover {
+    position         : relative;
+    background-image : none;
+    background-color : black;
+    color            : white;
+}
+.nav-area .btn:hover::after {
+    position    : absolute;
+    top         : 35%;
+    left        : 127px;
+    content     : "\f054";
+    color       : white;
+    font-family : fontAwesome;
+    font-size   : 0.8rem;
+}
+.mini-btn {
+    display             : none;
+    position            : relative;
+    background-image    : url(../img/button-arrow@2x.png);
+    background-position : 130px 50%;
+    background-size     : 8px 12px;
+    width               : 162px;
+    margin              : 0 auto;
+    padding             : 0.7rem 3.5rem;
+    border              : 1px solid black;
+    font-size           : 0.8rem;
+}
+.mini-btn:hover {
+    position         : relative;
+    background-image : none;
+    background-color : black;
+    color            : white;
+}
+.mini-btn:hover::after {
+    position    : absolute;
+    top         : 35%;
+    left        : 127px;
+    content     : "\f054";
+    color       : white;
+    font-family : fontAwesome;
+    font-size   : 0.8rem;
+}
+
+/* ヘッダー */
+#header {
+    position  : relative;
+    max-width : 100%;
+    height    : calc(100vh - 30px);
+}
+/* アニメーション */
+#imageRotator img {
+    position   : absolute;
+    top        : 0;
+	bottom     : 0;
+    left       : 0;
+	right      : 0;
+	width      : 100%;
+    height     : calc(100vh - 30px);
+    object-fit : cover;
+}
+#header .main-visual-arrow {
+    position        : absolute;
+    bottom          : 65px;
+    left            : 50%;
+    transform       : translateX(-50%);
+    background      : url(../img/mainVisual-arrow@2x.png) no-repeat;
+    background-size : 25px 15px;
+    width           : 25px;
+    height          : 15px;
+}
+#header .main-visual-footer {
+    position            : absolute;
+    bottom              : 0;
+    left                : 0;
+    background-image    : url(../img/mainVisual-overlay@2x.png);
+    background-position : center top;
+    background-repeat   : no-repeat;
+    background-size     : 100% 100%;
+    width               : 100%;
+    height              : 5%;
+}
+#header .header-wrapper {
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    right           : 0;
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    width           : 100%;
+    height          : 120px;
+}
+#header .header-wrapper .site-title {
+    max-width : 250px;
+}
+#header .header-wrapper .site-title img {
+    float       : left;
+    width       : 100%;
+    margin-left : 40%;
+}
+#header .header-wrapper .site-title img:hover {
+    opacity    : 0.7;
+    transition : 0.5s;
+}
+#header .header-wrapper .list {
+    display      : flex;
+    float        : right;
+    gap          : 30px;
+    margin-right : 40%;
+}
+#header .header-wrapper .list li a {
+    display        : inline-block;
+    padding-bottom : 0.125rem;
+    border-bottom  : 2px solid transparent;
+    font-size      : 0.8rem;
+    color          : white;
+}
+#header .header-wrapper .list li a:hover {
+    border-bottom  : 2px solid white;
+}
+
+
+/* メイン */
+main {
+    position : relative;
+}
+main #main-bottom-contents .back-top-btn {
+    position          : absolute;
+    bottom            : 55px;
+    left              : 50%;
+    transform         : translateX(-50%);
+    background-image  : url(../img/backTop@2x.png);
+    background-repeat : no-repeat;
+    background-size   : 45px 45px;
+    width             : 45px;
+    height            : 45px;
+    cursor            : pointer;
+}
+main #main-bottom-contents .back-top-btn:hover {
+    transition : 0.5s;
+    bottom     : 60px;
+}
+#calling {
+    padding          : 6.25rem 0;
+    background-color : rgb(239, 239, 239);
+}
+#calling .contents {
+    width  : 380px;
+    margin : 0 auto;
+}
+#calling .contents .title {
+    text-align    : center;
+    margin-bottom : 3.125rem;
+    font-size     : 2.8rem;
+    font-weight   : 400;
+}
+#calling .contents .text-area .description {
+    margin-bottom : 1.25rem;
+    font-size     : 1.2rem;
+    line-height   : 1.8;
+}
+#calling .contents .text-area .logo-area {
+    max-width : 220px;
+    margin    : 0 auto 1.25rem auto;
+}
+#calling .contents .text-area .logo-area img {
+    width : 100%;
+}
+#product {
+    padding          : 6.25rem 0;
+    background-color : white;
+}
+#product .nav-area {
+    margin-bottom : 2.1875rem;
+}
+#product .card-area .card-list {
+    max-width : 700px;
+    margin    : 0 auto;
+}
+#product .card-area .card-list {
+    display    : flex;
+    flex-wrap  : wrap;
+    column-gap : 3.33%;
+}
+#product .card-area .card-list li {
+    width  : 30.33%;
+    margin : 2.1875rem 0;
+    cursor : pointer;
+}
+#product .card-area .card-list li:hover {
+    opacity    : 0.7;
+    transition : 0.5s;
+}
+#product .card-area .card-list li .card-img {
+    width         : 100%;
+    height        : 300px;
+    border-radius : 3% 13% 13% 3%;
+}
+#product .card-area .card-list li .card-img img {
+    width  : 100%;
+    height : 100%;
+}
+#product .card-area .card-list li .card-title {
+    padding     : 0 1.25rem;
+    font-size   : 1.2rem;
+    font-weight : 700;
+}
+#news {
+    padding          : 6.25rem 0;
+    background-color : rgb(239, 239, 239);
+}
+#news .news-area .news-list li {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : flex-start;
+    margin-bottom   : 3.125rem;
+    cursor          : pointer;
+}
+#news .news-area .news-list li:hover {
+    opacity    : 0.7;
+    transition : 0.5s;
+}
+#news .news-area .news-list li .img-area {
+    width  : 40%;
+    height : 170px;
+}
+#news .news-area .news-list li .img-area img {
+    width  : 100%;
+    height : 100%;
+}
+#news .news-area .news-list li .text-area {
+    width : 55%;
+}
+#news .news-area .news-list li .text-area .title {
+    font-size      : 1.1rem;
+    letter-spacing : 2px;
+}
+#news .news-area .news-list li .text-area time {
+    font-size : 0.75rem;
+    color     : rgb(113, 113, 113);
+}
+#news .news-area .news-list li .text-area .description {
+    margin-top : 1rem;
+    font-size  : 0.9rem;
+    color      : rgb(113, 113, 113);
+} 
+#main-bottom-contents .sns-area .sns-wrapper {
+    width  : 100%;
+    margin : 1.875rem 0 1.875rem 0;
+}
+#main-bottom-contents .sns-area .sns-wrapper .list {
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    gap             : 30px;
+}
+#main-bottom-contents .sns-area .sns-wrapper .list a {
+    display        : block;
+    text-align     : center;
+    width          : 200px;
+    padding        : 0.9375rem 0;
+    letter-spacing : 1px;
+    font-size      : 0.8rem;
+}
+#main-bottom-contents .sns-area .sns-wrapper .list a:hover {
+    transition : 0.5s;
+}
+#main-bottom-contents .sns-area .sns-wrapper .list .facebook-btn {
+    border : 1px solid rgb(52, 81, 176);
+    color  : rgb(52, 81, 176);
+}
+#main-bottom-contents .sns-area .sns-wrapper .list .facebook-btn:hover {
+    background-color : rgb(52, 81, 176);
+    color            : white;
+}
+#main-bottom-contents .sns-area .sns-wrapper .list .twitter-btn {
+    border : 1px solid rgb(69, 209, 255);
+    color  : rgb(69, 209, 255);
+}
+#main-bottom-contents .sns-area .sns-wrapper .list .twitter-btn:hover {
+    background-color : rgb(69, 209, 255);
+    color            : white;
+}
+#main-bottom-contents .sns-area .sns-wrapper .list .bookmark-btn {
+    border : 1px solid rgb(65, 138, 232);
+    color  : rgb(65, 138, 232);
+}
+#main-bottom-contents .sns-area .sns-wrapper .list .bookmark-btn:hover {
+    background-color : rgb(65, 138, 232);
+    color            : white;
+}
+#main-bottom-contents .sns-area .sns-wrapper .list .line-btn {
+    display : none;
+    border  : 1px solid rgb(65, 232, 90);
+    color   : rgb(91, 216, 110);
+}
+#main-bottom-contents .sns-area .sns-wrapper .list .line-btn:hover {
+    background-color : rgb(91, 216, 110);
+    color            : white;
+}
+
+
+/* フッター */
+#footer .nav-area {
+    background-color : rgb(152, 152, 152);
+    margin           : 0;
+}
+#footer .nav-area .wrapper {
+    width  : 500px;
+    margin : 1.875rem auto;
+}
+#footer .nav-area .wrapper .list {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+}
+#footer .nav-area .wrapper .list a {
+    font-size : 0.8rem;
+    color     : white;
+}
+#footer .nav-area .wrapper .list a:hover {
+    opacity    : 0.7;
+    transition : 0.5s;
+}
+#footer .text-area {
+    padding          : 3.125rem 0;
+    background-color : rgb(97, 97, 97);
+}
+#footer .text-area .wrapper {
+    width  : 1000px;
+    margin : 0 auto;
+}
+#footer .text-area .wrapper .list {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+}
+#footer .text-area .wrapper .list .logo {
+    width  : 80px;
+    height : 80px;
+}
+#footer .text-area .wrapper .list .logo img {
+    width  : 100%;
+    height : 100%;
+}
+#footer .text-area .wrapper .list .logo img:hover {
+    opacity    : 0.7;
+    transition : 0.5s;
+}
+#footer .text-area .wrapper .list .copyright {
+    font-size : 0.7rem;
+    color     : white;
+}
+
+
+
+/*--------------------------------------------
+    SP
+--------------------------------------------*/
+@media screen and (max-width :900px) {
+    /* ヘッダー */
+    #header .main-visual-footer {
+        background-size : 100% 100%;
+    }
+    #header .pc-header {
+        display : none;
+    }
+    #header .sp-header {
+        display : block;
+    }
+    #header .sp-header-logo {
+        position        : absolute;
+        bottom          : 40%;
+        left            : 50%;
+        transform       : translateX(-50%);
+        background      : url(../img/siteLogo-sp@2x.png) no-repeat;
+        background-size : cover;
+        width           : 180px;
+        height          : 180px;
+    }
+    #header .sp-header {
+        position         : absolute;
+        top              : 0;
+        left             : 0;
+        display          : flex;
+        justify-content  : space-between;
+        align-items      : center;
+        padding          : 0 5%;
+        width            : 100%;
+        height           : 35px;
+        background-color : white;
+        color            : rgb(129, 129, 129);
+        font-size        : 0.8rem;
+    }
+    #header .sp-header .flex {
+        display         : flex;
+        justify-content : space-between;
+        align-items     : center;
+    }
+    #header .sp-header .img-area {
+        width : 15px;        
+    }
+    #header .sp-header .img-area img {
+        width  : 100%;
+        height : 100%;
+    }
+    #header .checked-sp-header {
+        display          : flex;
+        justify-content  : space-between;
+        align-items      : center;
+        padding          : 0 5%;
+        width            : 100%;
+        height           : 45px;
+        background-color : white;
+        color            : rgb(129, 129, 129);
+        font-size        : 0.8rem;
+    }
+    #header .sp-header .sp-header-menu {
+        width : 100%;
+    }
+    #header .checked-sp-header .img-area {
+        width : 15px;        
+    }
+    #header .checked-sp-header .img-area img {
+        width  : 100%;
+        height : 100%;
+    }
+    #header .hamburger-menu {
+        display  : block;
+        position : absolute;
+        top      : 0;
+        left     : 0;
+        width    : 100%;
+        height   : 100%;
+    }
+    #header .hamburger-menu .list {
+        background-color : rgba(0,0,0,0.7);
+    }
+    #header .hamburger-menu .list li {
+        padding    : 1.2rem 0 1.2rem 5%;
+        border-top : 1px solid white;
+        cursor     : pointer;
+    }
+    #header .hamburger-menu .list li a {
+        color     : white;
+        font-size : 0.8rem;
+    }
+    #header .menu-btn {
+        display         : flex;
+        justify-content : center;
+        align-items     : center;
+        z-index         : 90;
+        width           : 100%;
+        height          : 100%;
+    }
+    #menu-btn-check {
+        display : none;
+    }
+    #header .hamburger-none {
+        position : fixed;
+        top      : -100%;
+    }
+    #header .hamburger-menu {
+        display    : block ;
+        z-index    : 80;
+        transition : all 0.5s;
+        width      : 100%;
+        height     : 100%;
+    }
+    #header .sp-header .checked-sp-header-menu {
+        width : 100%;
+    }
+    #header .sp-header .header-list {
+        display         : flex;
+        justify-content : space-between;
+        align-items     : center;
+    }
+}
+
+@media screen and (max-width :780px) {
+    /* 設定 */
+    .wrapper {
+        max-width : 90%;
+    }
+
+    /* メイン */
+    #product .card-area .card-list {
+        display : block;
+    }
+    #product .card-area .card-list li {
+        display : flex;
+        width   : 100%;
+    }
+    #product .card-area .card-list li .card-img {
+        width : 33%;
+    }
+    #product .card-area .card-list li .card-title {
+        width   : 55%;
+        padding : 1.25rem 0 0 1.25rem;
+    }
+    #news .nav-area {
+        margin-bottom : 3.75rem;
+    }
+    #news .news-area .news-list li .text-area .title {
+        font-size : 1.05rem;
+    }
+    #news .news-area .news-list li .text-area time {
+        font-size : 0.75rem;
+    }
+    #news .news-area .news-list li .text-area .description {
+        line-height : 1.8;
+        font-size   : 0.78rem;
+    }
+    #main-bottom-contents .sns-area .sns-wrapper .list {
+        gap : 30px;
+    }
+    #main-bottom-contents .sns-area .sns-wrapper .list a {
+        width     : 160px;
+        padding   : 0.8rem 0;
+        font-size : 0.7rem;
+    }
+
+    /* フッター */
+    #footer .nav-area .wrapper {
+        width : 100%;
+    }
+}
+
+
+@media screen and (max-width :700px) {
+    /* 設定 */
+    .wrapper {
+        max-width : 90%;
+    }
+
+    /* メイン */
+    #calling {
+        padding-left : 3rem;
+    }
+    #calling .contents {
+        margin : 0;
+    }
+    #calling .contents .title {
+        text-align     : start;
+        letter-spacing : 3px;
+        font-size      : 2.8rem;
+    }
+    #calling .contents .text-area .logo-area {
+        margin-left : 0;
+    }
+    #product {
+        padding : 4.375rem 0;
+    }
+    #product .card-area .card-list li .card-img {
+        height : 250px;
+    }
+    #news {
+        padding : 4.375rem 0;
+    }
+    #news .news-area .news-list li .img-area {
+        height : 125px;
+    }
+    #main-bottom-contents .sns-area .sns-wrapper .list {
+        gap : 10px;
+    }
+    #main-bottom-contents .sns-area .sns-wrapper .list a {
+        width : 150px;
+    }
+}
+
+@media screen and (max-width :580px) {
+    /* 設定 */
+    .wrapper {
+        max-width : 90%;
+    }
+    main #main-bottom-contents .back-top-btn {
+        bottom : 120px;
+    }
+    main #main-bottom-contents .back-top-btn:hover {
+        bottom : 125px;
+    }
+
+    /* メイン */
+    #product .card-area .card-list li .card-img {
+        width  : 45%;
+        height : auto;
+    }
+    #main-bottom-contents .sns-area .sns-wrapper .list .line-btn {
+        display : block;
+    }
+    #main-bottom-contents .sns-area .sns-wrapper .list {
+        flex-wrap : wrap;
+        gap       : 10px;
+    }
+    #main-bottom-contents .sns-area .sns-wrapper .list li {
+        width : 47%;
+    }
+    #main-bottom-contents .sns-area .sns-wrapper .list a {
+        display        : block;
+        text-align     : center;
+        width          : 100%;
+        padding        : 0.9375rem ;
+        letter-spacing : 1px;
+        font-size      : 0.8rem;
+    }
+
+    /* フッター */
+    #footer .nav-area .wrapper {
+        max-width : 100%;
+        margin    : 0;
+    }
+    #footer .nav-area .wrapper .list {
+        flex-direction : column;
+    }
+    #footer .nav-area .wrapper .list li {
+        text-align : center;
+        width      : 100%;
+        padding    : 1rem 0 1rem 0;
+        border-top : 1px solid white;
+    }
+    #footer .text-area .wrapper {
+        width  : 100%;
+    }
+    #footer .text-area .wrapper .list {
+        flex-direction : column;
+    }
+    #footer .text-area .wrapper .list .logo {
+        margin-bottom : 1.5625rem;
+    }
+    #footer .text-area .wrapper .list .copyright {
+        text-align : center;
+        width      : 100%;
+        font-size  : 0.5rem;
+    }
+}
+
+@media screen and (max-width :500px) {
+    /* 設定 */
+    .wrapper {
+        max-width : 90%;
+    }
+    #header .none-header {
+        display          : block;
+        position         : absolute;
+        top              : 0;
+        left             : 0;
+        width            : 100%;
+        height           : 45px;
+        background-color : white;
+    }
+    .section-title .en {
+        letter-spacing : 3px;
+        font-size      : 1.8rem;
+    }
+    .nav-area .btn {
+        display : none;
+    }
+    .nav-area {
+        justify-content : center;
+    }
+    .section-title .border img {
+        display : block;
+        margin  : 0 auto;
+    }
+    .mini-btn {
+        display : block;
+    }
+
+    /* メイン */
+    #calling {
+        padding: 4.375rem 0 4.375rem 2.1875rem;
+    }
+    #calling .contents {
+        max-width : 100%;
+    }
+    #calling .contents .title {
+        margin-bottom : 2rem;
+        font-size     : 2rem;
+    }
+    #calling .contents .text-area .description {
+        margin-bottom : 1.25rem;
+        font-size     : 0.9rem;
+        line-height   : 1.8;
+    }
+    #calling .contents .text-area .logo-area {
+        max-width : 150px;
+    }
+    #product .card-area .card-list li {
+        flex-direction : column;
+    }
+    #product .card-area .card-list li .card-img {
+        width  : 100%;
+        height : auto;
+    }
+    #product .card-area .card-list li .card-title {
+        width       : 100%;
+        padding-top : 0;
+        font-size   : 1.1rem;
+    }
+    #news .news-area .news-list li {
+        flex-direction : column;
+    }
+    #news .news-area .news-list li .img-area {
+        width  : 100%;
+        height : auto;
+    }
+    #news .news-area .news-list li .text-area {
+        width  : 100%;
+    }
+    #news .news-area .news-list li .text-area .title {
+        margin-top  : 0.85rem;
+        line-height : 1.5;
+    }
+    #news .news-area .news-list li .text-area .description {
+        display : none;
+    }
+}
