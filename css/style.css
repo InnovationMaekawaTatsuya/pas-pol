@@ -21,7 +21,6 @@ ul {
 }
 #header .sp-header {
     display        : none;
-    border-bottom  : 1px solid lightgray;
 }
 #header .hamburger-menu {
     display : none;
@@ -441,7 +440,7 @@ main #main-bottom-contents .back-top-btn:hover {
         align-items      : center;
         padding          : 0 5%;
         width            : 100%;
-        height           : 50px;
+        height           : 35px;
         background-color : white;
         color            : rgb(129, 129, 129);
         font-size        : 0.8rem;
@@ -464,7 +463,7 @@ main #main-bottom-contents .back-top-btn:hover {
         align-items      : center;
         padding          : 0 5%;
         width            : 100%;
-        height           : 50px;
+        height           : 45px;
         background-color : white;
         color            : rgb(129, 129, 129);
         font-size        : 0.8rem;
@@ -699,7 +698,7 @@ main #main-bottom-contents .back-top-btn:hover {
         top              : 0;
         left             : 0;
         width            : 100%;
-        height           : 55px;
+        height           : 45px;
         background-color : white;
     }
     .section-title .en {
